@@ -11,7 +11,7 @@ body * {
 .container{
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,8 +60,23 @@ body * {
     text-align: center;
 }
 
-/*
-.redes-sociais{} */
+.redes-sociais{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.redes-sociais img{
+    width: 30px;
+    margin-left: 3rem;
+}
+
+.redes-sociais a:first-child img{
+    margin-left: 0;
+}
+
+
 
 .form{
     width: 100%;
@@ -107,6 +122,11 @@ body * {
     letter-spacing: 2px;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #ffffff52;
+}
+
+.btn-login:hover{
+    background-color: #fff;
+    color: #6bd2fc;
 }
 
 @media only screen and (max-width: 600px){
