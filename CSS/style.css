@@ -27,7 +27,7 @@ body * {
 }
 
 .ladoEsquerdo > h1 {
-    color: #fff;
+    color: #514869;
     font-size: 3vw;
 }
 
@@ -68,12 +68,13 @@ body * {
 }
 
 .redes-sociais img{
-    width: 30px;
+    width: 25px;
     margin-left: 3rem;
 }
 
 .redes-sociais a:first-child img{
     margin-left: 0;
+    width: 22px;
 }
 
 

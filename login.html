@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/javascript.js"></script>
     <title>Login</title>
 </head>
 
@@ -25,13 +26,13 @@
          
             
               <div class="redes-sociais">
-                <a href="#">
+                <a href="https://accounts.google.com/Login">
                     <img src="/Img/Gmail-logo.png" alt="Google">
                    </a>
-                   <a href="#">
+                   <a href="https://pt-br.facebook.com/login/">
                     <img src="/Img/fb_icon.png" alt="Facebook">
                    </a>
-                   <a href="#">
+                   <a href="https://www.linkedin.com/login">
                     <img src="/Img/linkedin_logo.png" alt="Linkedin">
                    </a>
                <!--  <ul class="list-redes-sociais">
@@ -47,9 +48,9 @@
                </div>
 
                 <form class="form">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
-                    <a href="#"> Esqueceu a senha? </a>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Senha" minlength="8" id="senha" required>
+                    <a href="recupSenha.html"> Esqueceu a senha? </a>
                     <button class="btn-login"> Entrar </button>
                 </form>
             </div> <!-- card login -->
