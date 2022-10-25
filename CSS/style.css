@@ -17,6 +17,8 @@ body * {
     align-items: center;
 }
 
+
+/*  LADO DA IMAGEM - LADO ESQUERDO  */
 .ladoEsquerdo{
     width: 50vw;
     height: 100vh;
@@ -31,9 +33,13 @@ body * {
     font-size: 3vw;
 }
 
-/*
-.ladoEsquerdo-Img{} */
 
+.ladoEsquerdo-Img{
+    width: 85%;
+    margin-top: 20px;
+}
+
+/*  LADO DO LOGIN - LADO DIREITO  */
 .ladoDireito{
     width: 50vw;
     height: 100vh;
@@ -48,23 +54,24 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #6089ed;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
 .card-login > h1 {
-    color: #fff;
+    color: #e0e0e0;
     font-weight: 000;
     margin: 0;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .redes-sociais{
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .redes-sociais img{
@@ -72,12 +79,18 @@ body * {
     margin-left: 3rem;
 }
 
-.redes-sociais a:first-child img{
+.redes-sociais a:first-child img{ /* formatação da primeira "imagem" que é o ícone do Gmail  */
     margin-left: 0;
     width: 22px;
 }
 
-
+div > span{
+    color: #89a5e9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
 
 .form{
     width: 100%;
@@ -93,21 +106,22 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #514869;
+    background: #89a5e9;
     color: #f0ffffde;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 10px 40px #89a5e956;
     outline: none;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
+
 
 .form > a{
     color: #fff;
 }
 
 .form > a:hover{
-    color: #6bd2fc;
+    color: #e0e0e0;
 }
 
 .btn-login{
@@ -116,7 +130,8 @@ body * {
     margin: 25px;
     border: none;
     border-radius: 8px;
-    background-color: #6bd2fc;
+    background-color: #e0e0e0;
+    color: #6089ed;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
@@ -127,14 +142,15 @@ body * {
 
 .btn-login:hover{
     background-color: #fff;
-    color: #6bd2fc;
+    color: #455a64;
 }
 
+/* CONFIGURAÇÃO DA RESPONSIVIDADE */
 @media only screen and (max-width: 600px){
     .container{ flex-direction: column;}
-    .ladoEsquerdo > h1{ display: none;}
     .ladoEsquerdo{ width: 100%; height: auto;}
-    .ladoEsquerdo-Img{ width: 50vw;}
+    .ladoEsquerdo-Img{ width: 60vw;}
 
-    .card-login{ width: 90%;}
+    .ladoDireito{ width: 100%; height: auto;}
+    .card-login{ width: 100%; height: auto;}
 }
