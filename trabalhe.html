@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS & JAVASCRIPT-->
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./SCRIPT/index.js"></script>
+    <!-- JavaScript BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--JavaScript ICONE-->
+        <script src="https://kit.fontawesome.com/c73b659f66.js" crossorigin="anonymous"></script>
+    <!-- Css animacão cards-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Document</title>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!--CONFIGURAÇÃO MENU-->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+
+            <div class="container-fluid">
+                <a class="navbar-brand " href="./index.html">
+                    <h2 id="logo">
+                        &lt;FrontEnders&gt;
+                    </h2>
+                    <!-- <img src="./img/logo/logo.png " width="220px"> -->
+                </a>
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lista Espera</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Básico</a></li>
+                                <li><a class="dropdown-item" href="#">Premium</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--botão login-->
+                    <div class="login">
+                        <a href="#" class="btn btn-primary">Login</a>
+                    </div>
+                    <!--botão login-->
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- FIM CONFIGURAÇÃO MENU-->
+
+    <section class="secao-trabalhe">
+        <div class="box-trabalhe">
+            <div class="img-trabalhe">
+                <img src="./imgHome/trablhe1.svg">
+            </div>
+
+            <div class="form-box-trabalhe">
+                <h2 class="fa fa-award">&emsp;Trabalhe Conosco</h2>
+                <p>Venha fazer parte do nosso time de Desenvolvedores</p>
+                <form action="#">
+                    <div class="input-trabalhe">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu Nome Completo" required minlength="5">
+                    </div>
+
+                    <div class="input-trabalhe">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" placeholder="Digite seu Email" required>
+                    </div>
+
+                    <div class="input-trabalhe">
+                        <label for="nome">Telefone</label>
+                        <input type="text" id="tele-fone" placeholder="Telefone " required maxlength="11">
+                    </div>
+
+                    <div class="input-trabalhe">
+                        <label for="validationTooltip03">Cidade</label>
+                        <input type="text" class="form-trabalhe" id="cidade" placeholder="Cidade" required>
+                    </div>
+                    <div class="input-trabalhe">
+                        <label for="validationTooltip05">CEP</label>
+                        <input type="text" class="form-trabalhe" id="cep" placeholder="Somente numeros" required
+                            maxlength="8">
+                    </div>
+                    <div class="input-curriculo">
+                        <label class="text" for="curriculo">Anexar Curriculo</label>
+                        <input type="file" class="form-trabalhe" id="curriculo" required>
+                    </div>
+                    <div class="input-trabalhe">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--RODAPE-->
+
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col" id="rodape-sobre">
+
+                    <a class="navbar-brand " href="#">
+                        <h2 id="logo">
+                            < FrontEnders>
+                        </h2>
+                        <!-- <img src="./img/logo/logo.png " width="220px"> -->
+                    </a>
+                    <div class="linha "></div>
+
+
+
+                    <div class="social-rodape">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col" id="rodape-servicos">
+                    <h2>Serviços</h2>
+                    <div class="linha "></div>
+                    <div class="links">
+                        <a href="#">Lista de Espera</a>
+                        <a href="#">Produtos</a>
+                        <a href="trabalhe.html">Trabalhe Conosco</a>
+                     
+                    </div>
+                </div>
+                <div class="col" id="rodape-contato">
+                    <h2>Contato</h2>
+                    <div class="linha "></div>
+                    <div class="contato-detalhes">
+                        <i class="fa fa-location"></i>
+                        <p>Madureira , Rio de Janeiro</p>
+                    </div>
+                    <div class="contato-detalhes">
+                        <i class="fa fa-phone"></i>
+                        <p>+55 21 0000-0000</p>
+                    </div>
+                    <div class="contato-detalhes">
+                        <i class="fa fa-envelope"></i>
+                        <p>FrontEnders@gmail.com</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <p class="desenvolvido">FrontEnders © Resilia-SENAC 2022</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
