@@ -102,7 +102,7 @@
                             minlength="6" maxlength="8"
                             required>
                         </input>  
-                        <label for="password"> Confirme sua senha </label>     
+                        <label for="confirme_password"> Confirme sua senha </label>     
                     </div>    
                       
                         <div class="form-floating">
@@ -118,18 +118,17 @@
                     </div>
                     <p></p>
     
-
-                <div class="row md-3">
+                    <div class="row md-3">
                        <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
                         <input type="text" class="form-control shadow-none" 
-                            id="adress"  
-                            name="adress"
+                            id="address"  
+                            name="address"
                             placeholder="Rua" 
                             disabled
                             data-input
                             required/>
                        
-                        <label for="adress"> Rua </label>     
+                        <label for="address"> Rua </label>     
                     </div>     
                                         
                     <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0" >
@@ -141,7 +140,7 @@
                             data-input
                             required/>
                         
-                        <label for="number"> Digite o número da residência</label>     
+                        <label for="number">Digite o número da residência</label>     
                     </div>    
                                        
                         <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
@@ -166,9 +165,7 @@
                                
                                 <label for="neighborhood"> Bairro </label>     
                              </div>   
-                            
-                                       
-                         
+                                                                                    
                                 <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
                                     <input type="text" class="form-control shadow-none" 
                                         id="city"  
@@ -182,10 +179,12 @@
                                 </div>     
                                 
                                 <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
-                                    <select name="region" id="region" class="form-select shadow-none"
+                                    <select 
+                                    name="region"
+                                    id="region" class="form-select shadow-none"
                                     disabled
                                     riquired
-                                    data-input>
+                                    data-input> 
 
                                     <option selected>Estado</option>
                                     <option value="AC">Acre</option>
@@ -221,7 +220,7 @@
 
                      </div> 
                      
-                     <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-end">
                         <button id="save-btn" type="submit" class="btn btn-primary"> Cadastrar</button>
 
                      </div>
