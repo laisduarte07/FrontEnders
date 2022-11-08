@@ -1,12 +1,10 @@
 :root{
    --bg-color: #161651; /* cor de fundo principal */
    --secundary-bg-color: #57576f; /* cor de fundo secundária */
-   --primary-color: #FFF; /* cor primária dos textos */
-   --secundary-color: rgb(208, 213, 221);
-   --text-color:  #d6d6e3;
+   --primary-color: rgb(117, 126, 179); /* cor primária dos textos */
+   --secundary-color: rgb(196, 202, 212);
+   --text-color:  #fdfdfd;
    --border-color: #c3c9ec;
-   
-
 }
 
 #checkout-page {
@@ -44,7 +42,7 @@ display: none !important;
 }
 
 .alert.alert-light p {
-   border-bottom: 1px solid #9597c4;
+   border-bottom: 1px solid #dadbeb;
    padding: 1.2em.0;
 }
 
@@ -57,7 +55,7 @@ display: none !important;
 #steps {
    display: flex;
    justify-content: space-between;              /*icones um ao lado do outro*/ 
-   border-bottom: 1px solid var(--text-color);
+   border-bottom: 1px solid var(--secundary-bg-color);
    position: relative;
 
 }
@@ -80,7 +78,7 @@ display: none !important;
 } 
 
 .step .active { 
-    background-color: var(--secundary-color);
+    background-color: var(--secundary-bg-color);
     color: var(--primary-color)
 }
 
@@ -135,4 +133,3 @@ color: var(--text-color)
    width: 8em;
    border-radius:1.5em;
 }
-
