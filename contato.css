@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+ .cardscontatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+  body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #202b4e;
+  }
+  
+  .card {
+    padding: 8px;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .card-info {
+    padding: 15px 0 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-info h6 {
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .card-info span {
+    margin-bottom: 5px;
+    color: #888888;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .card-info a {
+    width: 30px;
+    height: 30px;
+    margin: 8px 2px 0;
+    color: #333333;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    transition: all 0.5s;
+  }
+  
+  .card-info a:hover:nth-child(1) {
+    color: #ffffff;
+    background-color: #1877f2;
+  }
+  
+  .card-info a:hover:nth-child(2) {
+    color: #ffffff;
+    background-color: #e1306c;
+  }
+  
+  .card-info a:hover:nth-child(3) {
+    color: #ffffff;
+    background-color: #1da1f2;
+  }
+  
+  .card-info a:hover:nth-child(4) {
+    color: #ffffff;
+    background-color: #e60023;
+  }
+  
