@@ -6,16 +6,31 @@
   
 
  .cardscontatos {
-  display: flex;
-  flex-direction: row;
+
   justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+ }
+
+ .cardscontatos .card:hover {
+  background-color: #f1f4fb;
+  color: rgb(13, 95, 161);
+  margin-top: -20px;
+  box-shadow: 2px 15px 15px rgb(118, 100, 177); 
+  border-color:#495ca7;
+ }
+
+ .cardscontatos .card:hover img{
+  filter: invert(i);
+   
  }
 
   body {
     margin: 0;
-    padding: 20px;
+    padding: 30px;
     min-height: 100vh;
     background-color: #202b4e;
+  
   }
   
   .card {
@@ -23,6 +38,7 @@
     width: 300px;
     background-color: #ffffff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    
   }
   
   .card img {
@@ -69,21 +85,15 @@
   
   .card-info a:hover:nth-child(1) {
     color: #ffffff;
-    background-color: #1877f2;
+    background-color: #517eb9;
   }
   
   .card-info a:hover:nth-child(2) {
     color: #ffffff;
-    background-color: #e1306c;
+    background-color: #517eb9;
   }
   
   .card-info a:hover:nth-child(3) {
     color: #ffffff;
-    background-color: #1da1f2;
-  }
-  
-  .card-info a:hover:nth-child(4) {
-    color: #ffffff;
-    background-color: #e60023;
-  }
-  
+    background-color: #517eb9;
+  } 
