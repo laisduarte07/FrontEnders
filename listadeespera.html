@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Espera</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body id="checkout-page">
+
+    <!--CONFIGURAÇÃO MENU-->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+
+            <div class="container-fluid">
+                <a class="navbar-brand " href="index.html">
+                    <h2 id="logo">
+                        &lt;<em>FrontEnders</em>&gt;
+                        <!--simbolo de maior e menor utilizado na logo-->
+                    </h2>
+
+                </a>
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatos.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listadeespera.html">Lista Espera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./serviços.html">Serviços</a>
+                        </li>
+                    </ul>
+                    <!--botão login-->
+                    <div class="login">
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                    </div>
+                    <!--botão login-->
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- FIM CONFIGURAÇÃO MENU-->
+
+    <!--        <div id="fade" class="hide">
+            <div id="loader" class="spinner-border text-info hide" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div id="message" class="hide">
+                <div class="alert alert-light" role="alert">
+
+                    <h4>Mensagem:</h4>
+                    <p>textinho</p>
+                    <button id="close-message" type="button" class="btn btn-secondary"> Fechar</button>
+
+                </div>
+            </div>
+        </div> -->
+
+    <div id="order-form-container" class="container px-md-0">
+        <div id="steps" class="md-md-3 pb-md-3">
+            <div class="line"> </div>
+            <div class="step">
+                <i class="bi bi-person active"></i>
+                <!-- bi.bi= para criar o ínoce. active= para deixar o ícone aceso-->
+                <p class="d-none d-md-block"> Dados Pessoais </p>
+            </div>
+
+            <div class="step">
+                <i class="bi bi-geo alt active"></i>
+                <!-- bi.bi= para criar o ínoce. active= para deixar o ícone aceso-->
+                <p class="d-none d-md-block"> Endereço</p>
+            </div>
+            <div class="step">
+                <i class="bi bi-check2-circle"></i>
+                <!-- bi.bi= para criar o ínoce. active= para deixar o ícone aceso-->
+                <p class="d-none d-md-block"> Confirmação</p>
+            </div>
+        </div>
+
+        <div id="form-header">
+            <h2> Cadastro lista de espera</h2>
+            <p> Preencha os campos e receba Informações sobre nossos serviços </p>
+        </div>
+
+        <form id="adress-form">
+            <div class="row md-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control shadow-none text-white" id="name" name="name"
+                        placeholder="Digite o seu Nome" required>
+                    </input>
+                    <label for="name"> Digite o seu Nome </label>
+                </div>
+            </div>
+            <p></p>
+            <div class="row md-3">
+                <div class="form-floating">
+                    <input type="email" class="form-control shadow-none text-white" id="email" name="email"
+                        placeholder="Digite o seu email" required>
+                    </input>
+                    <label for="email"> Digite o seu E-mail </label>
+                </div>
+            </div>
+            <p></p>
+            <div class="row md-3">
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="password" class="form-control shadow-none text-white" id="password" name="password"
+                        placeholder="senha" minlength="6" maxlength="8" data-input required>
+                    </input>
+                    <label for="password"> Senha </label>
+                </div>
+
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="password" class="form-control shadow-none text-white" id="confirme_password"
+                        name="password" placeholder="confirme sua senha" data-input minlength="6" maxlength="8"
+                        required>
+                    </input>
+                    <label for="confirme_password"> Confirme sua senha </label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="text" class="form-control shadow-none text-white" id="cep" name="cep"
+                        placeholder="Digite o seu CEP" minlength="5" maxlength="8" required
+                        onblur="pesquisacep(this.value)">
+                    </input>
+                    <label for="cep"> Digite o seu CEP</label>
+                </div>
+            </div>
+            <p></p>
+
+            <div class="row md-3">
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="text" class="form-control shadow-none text-white" id="address" name="address"
+                        placeholder="Rua" disabled data-input required />
+
+                    <label for="address"> Rua </label>
+                </div>
+
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="text" class="form-control shadow-none text-white" id="number" name="number"
+                        placeholder="Digite o número da residência" data-input required>
+
+                    <label for="number">Digite o número da residência</label>
+                </div>
+
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="text" class="form-control shadow-none text-white" id="complement" name="complement"
+                        placeholder=" Digite o complemento" data-input required>
+
+                    <label for="complement"> Digite o complemento </label>
+                </div>
+
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="text" class="form-control shadow-none text-white" id="neighborhood" name="neighborhood"
+                        placeholder="Bairro" disabled data-input required>
+
+                    <label for="neighborhood"> Bairro </label>
+                </div>
+
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <input type="text" class="form-control shadow-none text-white" id="city" name="city"
+                        placeholder="Cidade" disabled data-input required>
+
+                    <label for="city"> Cidade </label>
+                </div>
+
+                <div class="form-floating col-12 col-sm-6 mb-3 mb-sm 0">
+                    <select name="region" id="region" class="form-select shadow-none text-white" disabled required
+                        data-input>
+
+                        <option selected>Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-end">
+                <button id="save-btn" type="submit" class="btn btn-primary"> Cadastrar</button>
+
+            </div>
+        </form>
+    </div>
+
+    <!--RODAPE-->
+
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col" id="rodape-sobre">
+
+                    <a class="navbar-brand " href="./index.html">
+                        <h2 id="logo">
+                            &lt;FrontEnders&gt;
+                        </h2>
+
+                    </a>
+                    <div class="linha "></div>
+                    <div class="social-rodape">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col" id="rodape-servicos">
+                    <h2>Serviços</h2>
+                    <div class="linha "></div>
+                    <div class="links">
+                        <a href="listadeespera.html">Lista de Espera</a>
+                        <a href="serviços.html">Produtos</a>
+                        <a href="trabalhe.html">Trabalhe Conosco</a>
+
+                    </div>
+                </div>
+                <div class="col" id="rodape-contato">
+                    <h2>Contato</h2>
+                    <div class="linha "></div>
+                    <div class="contato-detalhes">
+                        <i class="fa fa-location"></i>
+                        <p>Madureira , Rio de Janeiro</p>
+                    </div>
+                    <div class="contato-detalhes">
+                        <i class="fa fa-phone"></i>
+                        <p>+55 21 0000-0000</p>
+                    </div>
+                    <div class="contato-detalhes">
+                        <i class="fa fa-envelope"></i>
+                        <p>Front@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <p class="desenvolvido">FrontEnders © Resilia-SENAC 2022</p>
+    </footer>
+
+
+    <script src="./JS/lista.js"></script>
+
+    <!--VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--FIM VLIBRAS -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!--js icone-->
+    <script src="https://kit.fontawesome.com/c73b659f66.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

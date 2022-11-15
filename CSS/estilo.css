@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+        color: rgb(3, 7, 43);
+    text-decoration: none;
+    background-color: white;
+    }
+
+.superior{
+    text-align: center;
+font-size: 25px;
+margin-bottom: 5%;
+margin-top: 1%;
+}
+
+.superior nav a:hover{
+    color: rgb(137, 134, 158);
+    transition: 0.5s;
+}
+
+.prod{
+  border-radius: 10px;
+  box-shadow: 0;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+.prods {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prods img {
+    width: 310px;
+    height: 50%;
+}
+
+.p-superior h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(59, 58, 58);
+    font-weight: 600;
+  }
+
+  .p-descicao {
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  .p-descicao p {
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+.det-btn-p, .buy-btn{
+    margin-top: 20px;
+    display: block;
+    padding: 15px 30px;
+    width: 90%;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.det-btn-p:hover{
+  background-color: rgb(143, 129, 221);
+  color: white;
+  transition: 0.3s;
+}
+
+.buy-btn:hover{
+  background-color: rgb(249, 249, 250);
+  transition: 0.3s;
+}
+
+.verso{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    background: linear-gradient(to right, #696986, #f1f0f0);
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.verso-p-superior{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: rgb(3, 7, 43);
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eeeeee67;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.valor1-verso{
+    text-align: center;
+  font-size: 46px;
+  color: white;
+  font-weight: bold;
+}
+
+.buy-btn{
+    background-color: rgb(103, 103, 161);
+    width: 90%;
+}
+
+.verso-p.open{
+transform: translateX(0);
+}
+
+.corpo-produtos{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/******** CONFIGURAÇÃO RODAPÉ**********/
+
+footer {
+    background-color: #121415;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+    margin-top: 90px;
+    font-size: 24px;
+}
+
+footer .rodape {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .col {
+    min-width: 350px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 2rem;
+}
+
+footer .col h2,
+h3 {
+    color: #e8e8ec;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.desenvolvido  {
+    color: rgba(255, 255, 255, 0.63);
+  font-style: italic;
+   text-align: center;
+   font-size: 20px;
+}
+
+
+#rodape-servicos .linha,
+#rodape-contato .linha,
+#rodape-sobre .linha {
+    height: 5px;
+    width: 25%;
+    background: linear-gradient(to right, #00e0fe, #020568);
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+
+.col .social-rodape a i {
+    color: #f5f6fa;
+    margin: 5px;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+    font-size: 30px;
+}
+
+.col .social-rodape a i:hover {
+    transform: scale(1.5);
+
+}
+
+.col .links a {
+    display: block;
+    text-transform: none;
+    color: #d4d9df;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.col .links a::before {
+    content: '';
+    height: 30px;
+    width: 4px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #ffffff;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.col .links a:hover::before {
+    opacity: 1;
+}
+
+.col .links a:hover {
+    transform: translateX(-8px);
+}
+
+.col .contato-detalhes {
+    display: inline-flex;
+    justify-content: space-between;
+ 
+}
+
+.col .contato-detalhes i {
+    margin-right: 15px;
+    
+}
+
+@media (max-width:900px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+/********FIM CONFIGURAÇÃO RODAPÉ**********/
