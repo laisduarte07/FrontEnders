@@ -565,6 +565,18 @@ details[open] div {
     height: auto;
 
 }
+.cardscontatos .card-ctt:hover {
+    background-color: #f1f4fb;
+    color: rgb(13, 95, 161);
+    margin-top: -20px;
+    box-shadow: 2px 15px 15px rgb(118, 100, 177); 
+    border-color:#495ca7;
+   }
+  
+   .cardscontatos .card:hover img{
+    filter: invert(i);
+     
+   }
 
 .card-info {
     padding: 15px 0 7px;
