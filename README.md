@@ -1,7 +1,9 @@
-#Projeto  FrontEnders
-<details><sumary> Telas do Site
+#SENAC - RESILIA
+Projeto em Grupo Desenvolvido  com HTML, CSS  E JAVASCRIPT
+<details><sumary> Telas do Site<br>
   </sumary>
-   ➝ Página de <br>
+   ➝ Página Inicial <br>
+   ➝ Página de  Contatos <br>
    ➝ Página de Serviços   <br>
    ➝ Página Cadastro Lista de Espera <br>
    ➝ Página de Login com Recuperação de senha<br>
@@ -11,4 +13,7 @@
 ![image](https://user-images.githubusercontent.com/113525688/205652664-394d7098-0626-4d5a-b95b-8d62a7640a03.png)<br>
 ![image](https://user-images.githubusercontent.com/113525688/205652886-3eca8cea-3a4d-4f80-bc8f-eff1546aceba.png)<br>
 </details>
+
+!https://avatars.githubusercontent.com/u/113525360?v=4
+
 
