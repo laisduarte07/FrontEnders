@@ -1,9 +1,13 @@
 #Projeto em Grupo
-
+Projeto Desenvolvido em HTML5 , CSS E JAVASCRIPT 
 
 Desenvolver o front end para apresentar um novo
 produto lançado pela empresa FrontEnders.
-
+<detalhes abertos>
+<summary>Quer estragar a surpresa?</summary>
+<br>
+Bem, você pediu!
+</detalhes>
 Página Home:
 ![image](https://user-images.githubusercontent.com/113525688/205633610-e6e2dc6c-d37e-4c8c-8801-92c545e8b4c0.png)
 Página de Serviços:
