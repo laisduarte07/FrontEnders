@@ -12,6 +12,7 @@ Contamos com uma excelente interface e diversas Templates Personalizavéis
    ➝ Página de Serviços - Ana Beatriz  <br>
    ➝ Página Cadastro Lista de Espera - Maria Alice <br>
    ➝ Página de Login com Recuperação de senha - Laís <br>
+   ➝ Rodapé - Débora
 </details>
 
 ![image](https://user-images.githubusercontent.com/113525688/205652344-311603c9-4342-4b9c-ae3f-6d2b262b63d2.png)<br>
