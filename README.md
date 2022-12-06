@@ -1,5 +1,8 @@
-< FRONT ENDERS >
-Projeto em Grupo Desenvolvido  com HTML, CSS  E JAVASCRIPT
+<h2>&lt;FRONT<em>ENDERS&gt;</em> </h2> <br>
+<h3>Projeto em Grupo- Modulo 3 </h3>
+Desenvolvido com HTML, CSS  E JAVASCRIPT
+<br>
+<br>
 
 <h3>Proposta do Site</h3>
 Nossa Empresa oferece uma plataforma voltada para serviços FRONT END.<br>
